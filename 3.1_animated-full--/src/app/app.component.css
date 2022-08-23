@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  /* be as big as you can be inside the column */
+  /* this works bc we told the app-root to be a min of 100 view height */
+
+  /* this will not work in some places on mobile if the user has more than one tab open (tab bar takes up some of the view height). There is a ntew unit coming out that will take care of this (dvh) but for now, if you need pixel perfect accuracy, you'll need a JS workaround. */
+  /* this will not work in some places on mobile if the user has more thanurt one tab open (tab bar takes up some of the view height). There is a ntew unit coming out that will take care of this (dvh) but for now, if you need pixel perfect accuracy, you'll need a JS workaround. */
+  
+  /* Turtleguyy's workaround: 
+  https://github.com/Turtleguyy/alyssa/blob/master/index.html#L95 https://github.com/Turtleguyy/alyssa/blob/master/style.css#L15 */
+}
+
+.button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded relative;
+}
