@@ -1,0 +1,61 @@
+@import 'src/assets/colors.scss';
+@import 'src/assets/variables.scss';
+
+sidebar {
+  // grow priority 1, shrink priority 0 (don't shrink), default 0
+  flex: 1 0 0;
+  background-color: deepskyblue;
+  border-radius: 6px;
+  padding: $padding;
+  color: $muted-bg;
+  border: 2px solid $dark-purple;
+  margin: 0;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: $bear;
+
+    // why is this needed? where is 285 coming from??
+    .k-card {
+      width: 100% !important;
+      margin-bottom: $padding;
+      .k-card-body {
+        margin: $padding;
+      }
+    }
+
+    hr.k-card-separator {
+      margin-bottom: 10px;
+    }
+  }
+
+  h1, h2, h3 {
+    margin-bottom: $padding;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: $pony;
+    line-height: 24px;
+  }
+
+
+  .additional-info {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .k-fixed, .k-pos-fixed {
+    position: static !important;
+  }
+}

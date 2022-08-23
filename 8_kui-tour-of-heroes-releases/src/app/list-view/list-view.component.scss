@@ -1,0 +1,90 @@
+@import './src/assets/colors.scss';
+
+:host {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media all and (max-width: 767px) {
+  :host {
+    flex-direction: column;
+  }
+}
+
+:host > *:nth-child(1),
+:host > *:nth-child(2) {
+  flex: 1;
+}
+
+:host > *:nth-child(3) {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.k-listview {
+    font-family: sans-serif;
+    height: 340px;
+}
+
+.product {
+    padding: 8px;
+    width: 100%;
+}
+
+.product-name {
+    margin: 0 4px;
+}
+
+.item-postion {
+    font-style: italic;
+}
+
+.product.border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-color: lightgrey;
+}
+
+/* ListView Styles */
+
+.pony-name {
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.pony-info {
+  display: flex;
+  // justify-content: space-between;
+  gap: 4px;
+  padding: 0.5rem;
+}
+
+.pony-alias, .item-position {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.item-position {
+  font-weight: 600;
+}
+
+// ListView Header & Footer Styles
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+
+  padding: 12px;
+  font-size: 1rem;
+  color: lightgrey;
+}
+
+.footer {
+  font-size: 0.5rem;
+  font-style: italic;
+}

@@ -1,0 +1,33 @@
+<app-hero-search></app-hero-search>
+
+<section aria-labelledby="top-heroes-header">
+  <h2 id="top-heroes-header" data-text="Top Heroes">Top Heroes</h2>
+  <div class="top-hero-wrapper">
+    <hero-card *ngFor="let hero of heroes" [hero]="hero"></hero-card>
+  </div>
+</section>
+
+<section aria-labelledby="tile-layout-header">
+  <!-- expansion panel with custom title 💥 -->
+  <!-- <kendo-expansionpanel [expanded]="true" title="The Mane Six" subtitle="Organize your favorites!"> -->
+  <kendo-expansionpanel [expanded]="false" title="The Mane Six" subtitle="Organize your favorites!">
+    <ng-template kendoExpansionPanelTitleDirective>
+       <h2 id="tile-layout-header" class="small-header" data-text="Tile Layout in Expansion Panel">Tile Layout in Expansion Panel</h2>
+    </ng-template>
+
+    <tile-layout [heroes]="heroes"></tile-layout>
+  </kendo-expansionpanel>
+</section>
+
+
+<!-- <section aria-labelledby="heatmap-header">
+  <h2 id="heatmap-header" data-text="Pony Heatmap">Pony Heatmap</h2>
+  <app-heatmap></app-heatmap>
+</section> -->
+
+<!-- <section aria-labelledby="gantt-header">
+  <h2 id="gantt-header" data-text="Pony Gantt">Pony Gantt</h2>
+  <app-gannt maxWidth="1200" maxHeight="500"></app-gannt>
+</section> -->
+
+

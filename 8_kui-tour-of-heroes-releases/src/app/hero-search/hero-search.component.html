@@ -1,0 +1,62 @@
+<div class="search-component">
+    <div>
+        <label>Hop to a specific Hero:</label>
+        <kendo-dropdownlist [data]="heroes$ | async" textField="name" valueField="id"  (valueChange)="onValueChange($event)">
+        </kendo-dropdownlist>
+    </div>
+
+    <!-- TODO: Add filter option (filtering with observable hero data) -->
+    <!-- [filterable]="true" (filterChange)="search($event)" -->
+
+    <!-- TODO: figure out same type error -->
+    <!-- [defaultItem]="'Find your Hero ...'" -->
+
+   <!-- get ANY MCCB working -->
+    <!-- <kendo-label class="k-display-block" [for]="list" [text]="'Contact person:'">
+    </kendo-label>
+    <kendo-multicolumncombobox #list [data]="contacts" [listHeight]="300" [textField]="'name'" [valueField]="'id'">
+        <kendo-combobox-column [field]="'name'" [title]="'Contact Name'" [width]="200">
+            <ng-template kendoMultiColumnComboBoxColumnCellTemplate let-dataItem>
+                <img class="contact-image" [src]="getContactImageUrl(dataItem.id)" />
+                <span>{{ dataItem.name }}</span>
+            </ng-template>
+        </kendo-combobox-column>
+        <kendo-combobox-column [field]="'jobTitle'" [title]="'Title'" [width]="200">
+        </kendo-combobox-column>
+        <kendo-combobox-column [field]="'company'" [title]="'Company'" [width]="200">
+        </kendo-combobox-column>
+        <ng-template kendoMultiColumnComboBoxFooterTemplate>
+            <strong>
+                {{ contacts.length }} records in total
+            </strong>
+        </ng-template>
+    </kendo-multicolumncombobox> -->
+    <div class="search-box" *ngIf="heroes$">
+        <!-- get MCCB with our heroes$ data workings -->
+        <kendo-label class="k-display-block" [for]="mccbPonies" text="My Little Pony...">
+        </kendo-label>
+        <kendo-multicolumncombobox 
+            #mccbPonies
+            [data]="heroes$ | async" 
+            [listHeight]="300"    
+            textField="name" 
+            valueField="id">
+            <kendo-combobox-column field="name" title="Pony Name" [width]="200">
+                <ng-template kendoMultiColumnComboBoxColumnCellTemplate let-dataItem>
+                    <!-- <img class="contact-image" src="dataItem.img[0]" /> -->
+                    <img class="avatar" [src]="dataItem.avatar" title="pony avatar img">
+                    <span>{{ dataItem.name }}</span>
+                </ng-template>
+            </kendo-combobox-column>
+            <kendo-combobox-column field="occupation" title="Occupation" [width]="200">
+            </kendo-combobox-column>
+            <kendo-combobox-column field="alias" title="Alias" [width]="200">
+            </kendo-combobox-column>
+            <ng-template kendoMultiColumnComboBoxFooterTemplate *ngIf="(heroes$ | async)?.length">
+                <strong>
+                    {{ (heroes$ | async)?.length }} records in total
+                </strong>
+            </ng-template>
+        </kendo-multicolumncombobox>
+    </div>
+</div>

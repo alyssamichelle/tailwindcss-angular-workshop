@@ -1,0 +1,38 @@
+@import 'src/assets/colors.scss';
+
+$messages-bg-color: #EEE;
+
+.messages-header-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  background: $messages-bg-color;
+  overflow: hidden;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+// make the heading smaller for messages (aka event logs)
+h2 {
+  &, h2::before, h2::after {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+}
+
+.messages {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    padding-left: 20%;
+  }
+  // pinstriping the messages
+  li:nth-child(odd) {
+    background-color: $messages-bg-color;
+  }
+  // if there is only one message, no stripes, thanks
+  li:first-child:last-child { background: $muted-bg; }
+}

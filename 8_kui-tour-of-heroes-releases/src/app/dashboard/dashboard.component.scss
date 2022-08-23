@@ -1,0 +1,39 @@
+/* DashboardComponent's private CSS styles */
+:host {
+  display: block;
+}
+
+.top-hero-wrapper {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+// .k-expander-header {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .k-expander-header:hover {
+//   background-color: rgba(138, 180, 248, 0.05);
+//   // outline: 1px solid rgba(138, 180, 248, 0.25);
+//   transition: background-color 0.3s ease-in;
+// }
+
+// kendo-expansionpanel:focus {
+//   outline: none;
+// }
+
+// No idea why those .k-expander-header styles aren't applying. Angular.
+// The end goal here was to make the expander title look like a fancy h2.
+// Need to give the expansionpanel sections a seperator of some kind.
+// Need to give them a container so we can space them apart from the search.
+// Need to put messages into its own panel, collapsed by dewfault.
+// Can we use the MultiColumnComboBox inside of the search dropdown? Want.
+// Or maybe swap out the search with the FloatingActionButton? Might be too many ponies.
+// Why does reordering the tiles throw an error?

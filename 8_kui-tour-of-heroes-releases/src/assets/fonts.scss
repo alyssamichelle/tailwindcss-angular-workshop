@@ -1,0 +1,19 @@
+// Fonts for our Application
+
+@font-face {
+  font-family: 'pony';
+  src: url('/assets/fonts/bratsy-font/bratsy-script.woff2') format('woff2'), 
+    url('/assets/fonts/bratsy-font/bratsy-script.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'pony-outline';
+  src: url('/assets/fonts/bratsy-font/bratsy-outline.woff2') format('woff2'), 
+    url('/assets/fonts/bratsy-font/bratsy-outline.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'pony-extrude';
+  src: url('/assets/fonts/bratsy-font/bratsy-extrude.woff2') format('woff2'), 
+    url('/assets/fonts/bratsy-font/bratsy-extrude.woff') format('woff');
+}

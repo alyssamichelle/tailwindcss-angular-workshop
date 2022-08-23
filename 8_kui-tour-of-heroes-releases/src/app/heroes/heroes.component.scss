@@ -1,0 +1,28 @@
+/* HeroesComponent's private CSS styles */
+
+.new-hero-form {
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+  margin-bottom: 40px;
+  position: relative;
+
+  kendo-label {
+    position: absolute;
+    top: -22px;
+  }
+
+  input {
+    margin-bottom: 4px;
+    width: 50vw;
+  }
+
+  span {
+    display: flex;
+    input, button {
+      height: 35px;
+    }
+  }
+  
+}
+

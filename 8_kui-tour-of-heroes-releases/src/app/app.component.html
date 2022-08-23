@@ -1,0 +1,38 @@
+<header>
+  <h1 class="mane-title">
+    <span class="salty" data-text="Tour of H">Tour of H</span>
+    <span data-text="eroes">eroes</span>
+  </h1>
+  <img src="../assets/images/retro-mlp/my-littt-ponies-rainbow.png" alt="retro my little pony rainbow">
+
+  <nav>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+  </nav>
+</header>
+
+<div class="content-wrapper">
+  <section class="mane-section">
+    <router-outlet></router-outlet>
+  </section>
+  <sidebar></sidebar>
+</div>
+
+<app-messages></app-messages>
+
+<!-- add mobile nav -->
+<!-- <kendo-bottomnavigation [items]="items" positionMode="fixed" fill="solid" themeColor="warning">
+</kendo-bottomnavigation> -->
+
+<!-- themeColor="warning" -->
+<!-- positionMode="sticky" -->
+
+<!-- <kendo-bottomnavigation [items]="items" fill="solid" >
+  <ng-template kendoBottomNavigationItemTemplate let-item>
+    <div [routerLink]="item.path" class="k-bottom-nav-link"> 
+      <kendo-icon [name]="item.icon" size="medium"></kendo-icon>
+      <span>{{item.text}}</span>
+    </div>
+  </ng-template>
+</kendo-bottomnavigation>
+ -->

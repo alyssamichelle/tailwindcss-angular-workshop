@@ -1,0 +1,109 @@
+@import 'src/assets/colors.scss';
+@import 'src/assets/variables.scss';
+/* AppComponent's private CSS styles */
+
+.content-wrapper {
+  margin: 40px;
+  gap: 20px;
+  
+  display: flex;
+  /* Could NOT get these Grid styles working */
+  // grid-template-columns: repeat(auto-fill, minmax(70vw, 1fr));
+}
+
+@media (max-width: 1400px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
+
+.mane-title {
+  font-size: 90px;
+  padding-bottom: 20px;
+
+  * {
+    color: $hot-pink;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+
+  a {
+    z-index: 3;
+    text-decoration: none;
+    color: $hot-pink;
+
+
+    &:hover, &.active {
+      color: $dark-pink;
+    }
+  }
+}
+
+code {
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: deepskyblue;
+  user-select: all;
+  cursor: default;
+}
+
+code::after {
+  content: '';
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Our Styles as we add Kendo UI */
+
+header {
+  background: $light-blue;
+  background: linear-gradient(0deg, $light-blue 0%, #e7f9fd 49%, #f7f7f7 100%);
+  border-bottom: 2px solid $light-blue;
+  text-align: center;
+  padding: 100px 0 30px 0;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    $img-width: 335px;
+
+    position: absolute;
+    top: 0;
+    left: calc(50vw - #{$img-width});
+    z-index: 0;
+  }
+}
+
+.k-card-body {
+  margin: var(--k-card-body-margin);
+  padding: 0;
+  overflow: hidden;
+}
+
+// customizing the bottomNav
+kendo-bottomnavigation.k-bottom-nav-solid.k-bottom-nav-primary {
+  display: none;
+}
+
+@media (orientation: portrait)  {
+  kendo-bottomnavigation.k-bottom-nav-solid.k-bottom-nav-primary {
+    display: flex;
+  }
+}
+
+.k-bottom-nav-item > .k-bottom-nav-link {
+  flex-direction: column;
+}
+
+// &:hover, &:active {
+.k-bottom-nav-item.k-state-selected > .k-bottom-nav-link {
+  color: $muted-bg;
+}
+
+.k-bottom-nav-solid.k-bottom-nav-primary {
+  background-color: $hot-pink;
+}

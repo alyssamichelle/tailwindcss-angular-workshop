@@ -1,0 +1,254 @@
+<aside>
+  <h1>Latest Kendo UI Version</h1>
+
+  <section aria-labelledby="r2-2022-section-header">
+    <h2 id="r2-2022-section-header">R2 2022 Release</h2>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3><a href="https://www.telerik.com/kendo-angular-ui/components/listbox/">ListBox Component</a></h3>
+        <p class="additional-info">Components › ListBox</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-listbox</code>
+        <p>The Kendo UI for Angular ListBox is a component that displays a list of items. It allows for item selection reordering, and transfer between two or more ListBox components.</p>
+        <hr kendoCardSeparator />
+        <main>
+          <kendo-listbox kendoListBoxDataBinding [data]="europeanCountries" [connectedWith]="asia">
+          </kendo-listbox>
+          <kendo-listbox #asia [data]="asianCountries" [toolbar]="false">
+          </kendo-listbox>
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3><a href="https://www.telerik.com/kendo-angular-ui/components/pivotgrid/">PivotGrid Component</a></h3>
+        <p class="additional-info">Components › PivotGrid</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-pivotgrid</code>
+        <p>The Kendo UI for Angular PivotGrid displays multidimensional data in a cross-tabular format and comes with a set of
+        ready-to-use features covering local and remote data binding directives, built-in expanding and collapsing of row and
+        column axes, and dynamic calculation of the respective aggregates.</p>
+        <hr kendoCardSeparator />
+        <main>
+          <pivot-grid></pivot-grid>
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+       <h3><a href="https://www.telerik.com/kendo-angular-ui/components/map">Map Component</a></h3>
+        <p class="additional-info">Components › Map</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-map</code>
+        <p>Map description</p>
+        <hr kendoCardSeparator />
+        <main>
+        
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+       <h3><a href="https://www.telerik.com/kendo-angular-ui/components/filter">Filter Component</a></h3>
+        <p class="additional-info">Components › Filter</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-Filter</code>
+        <p>Filter description</p>
+        <hr kendoCardSeparator />
+        <main>
+        
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+  </section>
+  
+
+  <section aria-labelledby="r1-2022-section-header">
+    <h2 id="r1-2022-section-header">R1 2022 Release</h2>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3>Barcode Component</h3>
+        <p class="additional-info">Components › Barcodes</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-barcodes</code>
+        <p>The Angular Barcode comes with support for several 1D barcode types - all available through built-in configuration options. Each Angular Barcode can be rendered as an SVG or a Canvas element by setting a single property appropriately. the barcodes can be rendered either as a SVG or Canvas element. Additionally, each Barcode can be exported in PDF or PNG formats.</p>
+        <hr kendoCardSeparator />
+          <main>
+            <kendo-barcode type="EAN13" value="123456789013"> </kendo-barcode>
+          </main>
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3>QR Code Component</h3>
+        <p class="additional-info">Components › Barcodes › QR Code</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-barcodes</code>
+        <p>This new component comes with built-in support for encoding and error correction, something very important for those familiar with QR Codes, and you can add a custom overlay to the Angular QR Code to add items like a company logo to the QR Code. This opens up the opportunity to support specific types like the Swiss QR Code. These Angular QR Codes can be rendered both as SVG or Canvas elements and can be exported to various formats like PDF or PNG.</p>
+        <hr kendoCardSeparator />
+        <main>
+          <kendo-qrcode
+            value="https://www.telerik.com/kendo-angular-ui/"
+            errorCorrection="M"
+          >
+          </kendo-qrcode>
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3>Filter Component</h3>
+        <p class="additional-info">Components › Filter</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-filter</code>
+        <p>The Angular Filter component lets users create more complex filter expressions using an intuitive user interface. The filter expressions can be tied to any existing data collection within your Angular application and can connected to existing data-bound UI components like the Kendo UI for Angular data grid.</p>
+        <hr kendoCardSeparator />
+        <main>
+          <kendo-filter [filters]="filters" (valueChange)="onFilterChange($event)">
+          </kendo-filter>
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3>Popover Component</h3>
+        <p class="additional-info">Components › Tooltips › Popover</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-tooltip</code>
+        <p>The new Kendo UI for Angular Popover component gives developers an easy way to display additional information about an element on focus, click, or hover. While there is a connection to other similar components like the Tooltip, the Angular Popover is designed to display more advanced content. Common scenarios include the element which gets displayed when hovering over calendar elements within Google Calendar or Outlook where information like attendees, meeting notes, and additional event-related information can be displayed.</p>
+        <hr kendoCardSeparator />
+        <main>
+          <!-- TODO: This does not work I do not know why. -->
+          <button
+            kendoPopoverAnchor
+            [popover]="myPopover"
+            kendoButton
+          >
+            Click to Show Popover
+          </button>
+
+          <kendo-popover #myPopover title="Popover Title" body="Popover Body">
+          </kendo-popover>
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3>FlatColorPicker Component</h3>
+        <p class="additional-info">Components › Inputs › FlatColorPicker</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-inputs</code>
+        <p>The Kendo UI for Angular FlatColorPicker component expands the number of ways users can select a color within any Angular application. The component renders the entire color picking interface without being hidden behind a dropdown or any other element. The FlatColorPicker component can easily integrate into both template-driven and reactive forms.</p>
+        <hr kendoCardSeparator />
+        <main>
+          <kendo-flatcolorpicker
+            [value]="value"
+            [preview]="false"
+          ></kendo-flatcolorpicker>
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+  </section>
+
+  <section aria-labelledby="r3-2021-section-header">
+  <h2 id="r3-2021-section-header">R3 2021 Release</h2>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3>Heatmap Component</h3>
+        <p class="additional-info">Charts › Series Types › Heatmap</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-charts&nbsp;</code>
+        <p>Heatmap charts use colors to indicate the relative value of data points in two dimensions. Heatmap charts, also known as "cluster heat map", are suitable for visualizing the magnitude of a value over two
+        dimensions. The X and Y values are discrete and can be set in any order.</p>
+        <hr kendoCardSeparator />
+          <main>
+            <kendo-chart
+              [style.height.px]="200"
+            >
+              <kendo-chart-series>
+                <kendo-chart-series-item type="heatmap" [data]="dataR2"
+              [color]="'#f03c97'">
+                </kendo-chart-series-item>
+              </kendo-chart-series>
+
+              <kendo-chart-x-axis>
+                <kendo-chart-x-axis-item [categories]="categories.x">
+                </kendo-chart-x-axis-item>
+              </kendo-chart-x-axis>
+
+              <kendo-chart-y-axis>
+                <kendo-chart-y-axis-item [categories]="categories.y">
+                </kendo-chart-y-axis-item>
+              </kendo-chart-y-axis>
+            </kendo-chart>
+          </main>
+
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3>Typography Component</h3>
+        <p class="additional-info">Components › Typography</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-typography&nbsp;</code>
+        <p>The Kendo UI for Angular Typography directive allows you to improve the appearance of any UI element by using the available Kendo UI theme classes.</p>
+        <hr kendoCardSeparator />
+        <main>
+          <h1 kendoTypography fontWeight="light" variant="h6">I don't want to look like an h1.</h1>
+          <h1 kendoTypography variant="h4">BECAUSE I NEED IT TO LOOK LIKE AN H4</h1>
+          <div kendoTypography themeColor="inherit" variant="h1">inherit h1</div>
+          <div kendoTypography themeColor="primary" variant="h2">primary h2</div>
+          <div kendoTypography themeColor="secondary" fontWeight="bold" variant="h3">secondary bold h3</div>
+          <div kendoTypography themeColor="tertiary" fontWeight="light" variant="h4">tertiary light h4</div>
+          <div kendoTypography themeColor="info" variant="h5">info h5</div>
+          <div kendoTypography themeColor="success" variant="h6">success h6</div>
+          <div kendoTypography themeColor="warning">warning</div>
+          <div kendoTypography themeColor="error">error</div>
+          <div kendoTypography themeColor="dark">dark</div>
+          <div kendoTypography themeColor="light">light</div>
+          <div kendoTypography themeColor="inverse">inverse</div>
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+
+    <kendo-card>
+      <kendo-card-header>
+        <h3>Gannt Component</h3>
+        <p class="additional-info">Components › Gannt</p>
+      </kendo-card-header>
+      <kendo-card-body>
+        <code>ng add @progress/kendo-angular-gantt&nbsp;</code>
+        <p>The Kendo UI for Angular Gantt displays hierarchical tasks data in tabular and timeline formats and comes with a comprehensive set of ready-to-use features covering everything from data binding directives, sorting, filtering, tasks, dependencies, and intuitive display of task timelines, progression, and styling.</p>
+        <hr kendoCardSeparator />
+        <main>
+          <p>Gant chart is commented out right now — under construction. Uncomment to see it.</p>
+          <!-- Max widths needed to display app-gant at any reasonable size -->
+          <!-- <app-gannt></app-gannt> -->
+        </main>
+      </kendo-card-body>
+    </kendo-card>
+  </section>
+
+</aside>
