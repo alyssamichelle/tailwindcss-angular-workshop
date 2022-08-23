@@ -5,9 +5,11 @@
 :host {
   @apply m-16 block;
 }
+
 :host > * {
   @apply m-5;
 }
+
 button {
   @apply bg-purple-100 text-purple-700;
 }
