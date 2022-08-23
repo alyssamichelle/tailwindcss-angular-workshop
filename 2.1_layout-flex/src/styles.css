@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:host {
+body {
   @apply m-16 block;
 }
-:host > * {
+body > * {
   @apply m-5;
 }
 button {
