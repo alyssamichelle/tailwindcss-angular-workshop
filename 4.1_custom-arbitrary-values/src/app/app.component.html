@@ -1,0 +1,24 @@
+<h1 class="capitalize text-4xl mb-10 font-thin">combining hover state knowledge & arbitrary values</h1>
+
+<main class="flex flex-wrap gap-5 items-start">
+  <section class="flex-col gap-5 p-10 bg-slate-100" aria-labelledby="section-header-0">
+    <h1 id="section-header-0" class="text-3xl mb-4 font-light">Without Tailwind</h1>
+    <p>The anchors from the Tailwind CSS Docs. 👇</p>
+    <!-- prompt: give both anchors some spacing away from the paragraph -->
+
+    <!-- prompt: if you used display block, ensure that our section doesn't grow larger on hover -->
+    <a class="tw-doc-anchor my-5 inline-block">Pseudo-classes</a>
+
+    <!-- answer: could choose a different method for spacing OR give bottom border with box-shadow instead... let's talk box shadows and customizing with config! -->
+    <a class="tw-doc-anchor my-5 inline-block">Pseudo-classes</a>
+
+  </section>
+
+  <!-- side-by-side the CSS and try to mimic the tailwind docs anchor but actually using tailwind to do so. lolz -->
+  <section class="flex-col gap-5 p-10 bg-red-100" aria-labelledby="section-header-1">
+    <h1 id="section-header-1" class="text-3xl mb-4 font-light">With Tailwind</h1>
+    <p>Let's implement these anchor styles now, using tailwind!</p>
+    <a
+      class="cursor-pointer no-underline font-semibold border-[#7dd3fc] border-b-[1px] hover:border-b-2">Pseudo-classes</a>
+  </section>
+</main>
