@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-16 block;
+}
+
+body>* {
+  @apply m-5;
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-100 rounded-lg p-6 shadow-xl;
+  }
+}
+
+/* now let's use the theme function to write this instead */
+/* @layer components {
+  .card {
+    background-color: theme(colors.slate.100);
+    border-radius: theme(borderRadius.lg);
+    padding: theme(spacing.6);
+    box-shadow: theme(boxShadow.xl);
+  }
+} */

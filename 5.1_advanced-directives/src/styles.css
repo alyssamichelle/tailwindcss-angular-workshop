@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-16 block;
+}
+
+body > * {
+  @apply m-5;
+}
+
+/* so we consolidated card styles, but for some reason we cannot inline padding now. */
+.card {
+  @apply bg-slate-100 rounded-lg p-6 shadow-xl hover:bg-slate-200 hover:animate-pulse active:shadow-none transition-shadow duration-500;
+}
+
+@tailwind utilities;
+
+/* @layer components {
+  .card {
+    @apply bg-slate-100 rounded-lg p-6 shadow-xl hover:bg-slate-200 hover:animate-pulse active:shadow-none transition-shadow duration-500;
+  }
+} */

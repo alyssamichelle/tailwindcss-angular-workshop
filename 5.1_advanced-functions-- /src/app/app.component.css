@@ -1,0 +1,12 @@
+code {
+  @apply bg-slate-200 font-mono text-blue-900;
+}
+
+a {
+  @apply underline italic font-bold hover:bg-slate-50;
+}
+
+/* turtle wut am I doing wrong? */
+main {
+  background-color: theme(colors[blue]);
+}

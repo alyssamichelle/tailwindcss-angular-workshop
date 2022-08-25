@@ -10,10 +10,3 @@ body > * {
   @apply m-5;
 }
 
-button {
-  @apply bg-purple-100 text-purple-700;
-}
-
-body {
-  @apply m-16 bg-violet-500 text-white;
-}

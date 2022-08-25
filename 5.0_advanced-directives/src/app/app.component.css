@@ -1,0 +1,9 @@
+code {
+  @apply bg-slate-200 font-mono text-blue-900;
+}
+
+a {
+  @apply underline italic font-bold hover:bg-slate-50;
+}
+
+/* @tailwind utilities; */
