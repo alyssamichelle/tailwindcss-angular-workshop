@@ -1,0 +1,33 @@
+<h1 class="capitalize text-4xl mb-10 font-thin">Customizing Config File</h1>
+
+<main class="flex flex-wrap gap-5 items-start">
+  <section class="flex-col gap-5 p-10 bg-red-200" aria-labelledby="section-header-1">
+    <h1 id="section-header-1" class="text-3xl mb-4 font-light">With Popping Issue</h1>
+    <p>Let's implement these anchor styles now, using tailwind!</p>
+    <a class="cursor-pointer no-underline font-semibold border-[#7dd3fc] border-b-[1px] hover:border-b-2 inline-block my-6">Pseudo-classes</a>
+  </section>
+
+  <!--  -->
+  <section class="flex-col gap-5 p-10 bg-yellow-200" aria-labelledby="section-header-2">
+    <h1 id="section-header-2" class="text-3xl mb-4 font-light">Box Shadow instead of Border</h1>
+    <p>Let's implement these anchor styles now, using tailwind!</p>
+    <a class="cursor-pointer no-underline font-semibold inline-block my-6 shadow-[0px_1px_0px_0px_rgba(125,211,252,1)] hover:shadow-[0px_2px_0px_0px_rgba(125,211,252,1)]">Pseudo-classes</a>
+  </section>
+
+  <section class="flex-col gap-5 p-10 bg-emerald-200" aria-labelledby="section-header-3">
+    <h1 id="section-header-3" class="text-3xl mb-4 font-light">Customizing Box Shadows using Config File</h1>
+    <p>We can add to Tailwind's defaults in the config file! Let's add a couple of new box-shadows so we can use them to underline our anchors!</p>
+    <a class="cursor-pointer no-underline font-semibold shadow-anchor hover:shadow-anchor-hover">Pseudo-classes</a>
+  </section>
+
+  <section class="flex-col gap-5 p-10 bg-blue-200 text-white" aria-labelledby="section-header-4">
+    <h1 id="section-header-4" class="text-3xl mb-4 font-light">Definitely not Blue</h1>
+    <p>We can also completely override Tailwind's defaults in the config file. For example, if we want Tailwind's light blue to actually be a rich purple color, no one can stop us!</p>
+  </section>
+
+  <section class="flex-col gap-5 p-10 bg-sky-200" aria-labelledby="section-header-5">
+    <h1 id="section-header-5" class="text-3xl mb-4 font-light">Itty Bitty Living Space</h1>
+    <p>The spacing between these boxes should have been the same as before, but we overrode the spacing scale for 5 and set it to 1px! In this case, gap-5 changes from 1.25rem to 1px.</p>
+  </section>
+
+</main>

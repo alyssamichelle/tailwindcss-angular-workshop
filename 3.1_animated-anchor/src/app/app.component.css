@@ -1,0 +1,7 @@
+section {
+  @apply max-w-sm;
+}
+
+button {
+  @apply my-4 py-2 px-3 text-xl bg-purple-100 text-purple-500 hover:bg-purple-200;
+}

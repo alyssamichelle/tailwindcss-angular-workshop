@@ -1,0 +1,30 @@
+<main class="flex flex-wrap gap-5 items-start">
+
+  <section class="flex-col gap-5 p-10 bg-green-100" aria-labelledby="section-header-1">
+    <h1 id="section-header-1" class="text-3xl mb-4 font-light">Hover State</h1>
+    <p>Let's implement these anchor styles now, using tailwind!</p>
+    <a class="hover:scale-125 inline-block origin-center cursor-pointer transition-transform">
+      Hoovers
+    </a>
+  </section>
+
+  <section class="flex-col gap-5 p-10 bg-yellow-100" aria-labelledby="section-header-1">
+    <h1 id="section-header-1" class="text-3xl mb-4 font-light">State Selectors</h1>
+    <p>State Selectors include things like :hover, :focus, :required, and :visited. Let's give our anchor a visited style, the browser does this by default, so it is nice to override the browsers default with a branded option.
+    </p>
+    <a href="https://amn.me/" class="hover:text-cyan-500 active:text-purple-500 visited:text-pink-500 cursor-pointer transition-colors">
+      Gotta click me first
+    </a>
+  </section>
+
+  <section class="flex-col gap-5 p-10 bg-pink-100" aria-labelledby="section-header-1">
+    <h1 id="section-header-1" class="text-3xl mb-4 font-light">Psuedo Selectors</h1>
+    <p>There are many psuedo selectors that you occassionally need to reach for (::before, ::after, ::placeholder,
+      ::selection).</p>
+    <a href="https://amn.me/"
+      class="cursor-pointer inline-block uppercase font-black text-red-300 relative before:block before:content-['pseudo_elements!'] before:uppercase before:absolute before:bottom-[3px] before:right-[2px] before:w-full before:text-red-500 before:z-0 before:[text-shadow:1px_1px_0_yellow] after:block after:content-['pseudo_elements!'] after:uppercase after:absolute after:bottom-[3px] after:right-[2px] after:w-full after:z-1 after:bg-gradient-to-r after:from-cyan-400 after:to-pink-400 after:bg-clip-text after:[-webkit-text-fill-color:transparent] after:opacity-0 hover:after:opacity-100 after:transition-opacity hover:scale-125 active:scale-75 transition-transform">
+      Pseudo Elements!
+    </a>
+  </section>
+
+</main>
