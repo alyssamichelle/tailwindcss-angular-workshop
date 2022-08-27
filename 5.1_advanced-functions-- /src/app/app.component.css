@@ -6,7 +6,35 @@ a {
   @apply underline italic font-bold hover:bg-slate-50;
 }
 
-/* turtle wut am I doing wrong? */
+/* super duper not impressed with my use of theme(), still not seeing the point of it, cuz you could just replace it with @apply bg-colors-blue-200, right? huh? */
+/* Yep, but what if you had some crazy config things that were not extensions of tailwind, but brand-specific for your project? */
 main {
-  background-color: theme(colors[blue]);
+  height: calc(100vh - theme(spacing.12));
+  background-image: linear-gradient(45deg, theme(colors.charms.hearts) 12.5%, theme(colors.charms.stars) 12.5%, theme(colors.charms.stars) 25%, theme(colors.charms.shoes) 25%, theme(colors.charms.shoes) 37.5%, theme(colors.charms.clovers) 37.5%, theme(colors.charms.clovers) 50%, theme(colors.charms.moons) 50%, theme(colors.charms.moons) 62.5%, theme(colors.charms.gold) 62.5%, theme(colors.charms.gold) 75%, theme(colors.charms.rainbows) 75%, theme(colors.charms.rainbows) 87.5%, theme(colors.charms.balloons) 87.5%, theme(colors.charms.balloons) 100%);
+  border: 5px solid theme(colors.hermajesty.mane);
+  box-shadow: 0 0 0 5px theme(colors.hermajesty.body) inset;
+  transition: background 200ms ease;
+}
+
+/* also, if you could add a @screen() example too , that would be DANDY */
+@media screen(sm) {
+  main {
+    background-size: 200%;
+    animation: portable-heater 5s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes portable-heater {
+  0% {
+    background-position: left bottom;
+  }
+
+  50% {
+    background-position: right top;
+  }
+
+  100% {
+    background-position: left bottom;
+  }
+
 }

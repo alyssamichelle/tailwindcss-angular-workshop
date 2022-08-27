@@ -1,7 +1,7 @@
 <div class="search-component">
     <div>
-        <label>Hop to a specific Hero:</label>
-        <kendo-dropdownlist [data]="heroes$ | async" textField="name" valueField="id"  (valueChange)="onValueChange($event)">
+        <label class="dark:text-slate-200">Hop to a specific Hero:</label>
+        <kendo-dropdownlist class="dark:bg-slate-900" [data]="heroes$ | async" textField="name" valueField="id"  (valueChange)="onValueChange($event)">
         </kendo-dropdownlist>
     </div>
 
@@ -33,14 +33,15 @@
     </kendo-multicolumncombobox> -->
     <div class="search-box" *ngIf="heroes$">
         <!-- get MCCB with our heroes$ data workings -->
-        <kendo-label class="k-display-block" [for]="mccbPonies" text="My Little Pony...">
+        <kendo-label class="dark:text-slate-100 k-display-block" [for]="mccbPonies" text="My Little Pony...">
         </kendo-label>
         <kendo-multicolumncombobox 
             #mccbPonies
             [data]="heroes$ | async" 
             [listHeight]="300"    
             textField="name" 
-            valueField="id">
+            valueField="id"
+            class="dark:bg-slate-900">
             <kendo-combobox-column field="name" title="Pony Name" [width]="200">
                 <ng-template kendoMultiColumnComboBoxColumnCellTemplate let-dataItem>
                     <!-- <img class="contact-image" src="dataItem.img[0]" /> -->

@@ -1,3 +1,9 @@
+# Tour of Ponies wiht Tailwind CSS + Kendo UI
+I decided a wonderful place to start integrating Tailwind into an existing app would be to try out dark mode! 
+- I started sprinkling in stlyes for very custom things I created.
+- I then used the Kendo UI theme builder to customize all the components and added the generated scss file to our application.
+- Now to specify when to use those styles... if dark then @import dark-mode.scss
+
 # Tour of Heroes — My Little Pony Flavored & Using Kendo UI!
 
 ![kendoka for angular plus mlp](https://p192.p3.n0.cdn.getcloudapp.com/items/rRu7OBlg/Screen%20Shot%202020-08-27%20at%2012.53.56%20PM.png?v=a47c8028358bc533908f0b9545f14087 "kendoka plus my little pony logo")

@@ -10,12 +10,12 @@
     </a>
   </kendo-card> -->
 
-<kendo-card width="260px">
+<kendo-card width="260px" class="dark:bg-slate-900 hover:dark:bg-black">
   <a routerLink="/detail/{{hero.id}}">
     <kendo-card-header class="k-hbox">
       <div>
-        <h3 kendoCardTitle>{{ hero.name }}</h3>
-        <p kendoCardSubtitle *ngIf="hero.residence" title="{{ hero.residence }}">{{ hero.alias }} from {{ hero.residence | ellipsis:25 }}</p>
+        <h3 class="dark:text-white" kendoCardTitle>{{ hero.name }}</h3>
+        <p class="dark:text-slate-300" kendoCardSubtitle *ngIf="hero.residence" title="{{ hero.residence }}">{{ hero.alias }} from {{ hero.residence | ellipsis:25 }}</p>
       </div>
     </kendo-card-header>
     <img src="../assets/images/retro-mlp/{{hero.largeAvatar}}" [alt]="hero.name" />

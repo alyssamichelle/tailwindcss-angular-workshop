@@ -2,6 +2,8 @@
 @import 'src/assets/variables.scss';
 /* AppComponent's private CSS styles */
 
+$base-bg: #f06482;
+
 .content-wrapper {
   margin: 40px;
   gap: 20px;
@@ -22,6 +24,7 @@
   padding-bottom: 20px;
 
   * {
+    @apply dark:text-[#{$hot-pink}];
     color: $hot-pink;
   }
 }
@@ -60,6 +63,7 @@ code::after {
 /* Our Styles as we add Kendo UI */
 
 header {
+  @apply dark:bg-gradient-to-t dark:from-[#{$dark-blue}] dark:to-slate-800 dark:border-[#{$dark-blue}];
   background: $light-blue;
   background: linear-gradient(0deg, $light-blue 0%, #e7f9fd 49%, #f7f7f7 100%);
   border-bottom: 2px solid $light-blue;
@@ -75,6 +79,7 @@ header {
     top: 0;
     left: calc(50vw - #{$img-width});
     z-index: 0;
+    max-width: none;
   }
 }
 

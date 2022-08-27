@@ -19,6 +19,7 @@ import { Router } from '@angular/router';
 // But what about hooking in actual routes???
 export class AppComponent {
   public items: Array<any> = [];
+  public theme: String = 'light';
 
   constructor(private router: Router) {
     const routes: any[] = router.config;
@@ -34,5 +35,25 @@ export class AppComponent {
     });
 
     this.items[0].selected = true;
+    this.updateTheme();
+  }
+
+  onThemeToggle() {
+    localStorage.theme = this.theme == 'light' ? 'dark' : 'light';
+    this.updateTheme();
+  }
+
+  updateTheme() {
+    const isExplicitDark = localStorage.theme === 'dark';
+    const isImplicitDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const themeNotSet = !('theme' in localStorage);
+    
+    if (isExplicitDark || (themeNotSet && isImplicitDark)) {
+      document.documentElement.classList.add('dark');
+      this.theme = 'dark';
+    } else {
+      document.documentElement.classList.remove('dark');
+      this.theme = 'light';
+    }
   }
 }
