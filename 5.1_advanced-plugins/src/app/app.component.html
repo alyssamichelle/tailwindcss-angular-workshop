@@ -5,11 +5,10 @@
   Let's learn Tailwind CSS
 </h2>
 
-<!-- At any screen size, I need to just one row of ascii kitty cats -->
-<!-- clue: one possible way of solving this whitespace-nowrap overflow-clip -->
 <div class="text-xs flex whitespace-nowrap overflow-clip">=^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^=
   =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^=
   =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= </div>
+
 <h1 class="text-3xl my-5">
   Plugins
 </h1>
@@ -17,20 +16,18 @@
   Forms
 </h2>
 
-<div class="text-xs flex whitespace-nowrap overflow-clip">=^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^=
-  =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^=
-  =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= </div>
+<div class="text-xs flex whitespace-nowrap overflow-clip">=^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= =^..^= </div>
 
-<form class="">
+<form class="flex flex-col">
   <label for="name">Full name</label>
   <input id="name" type="text" placeholder="" />
-
+  
   <label for="email">Email address</label>
   <input id="email" type="email" placeholder="john@example.com" />
-
+  
   <label for="date">When is your event?</label>
   <input id="date" type="date" />
-
+  
   <label for="select">What type of event is it?</label>
   <select id="select">
     <option>Corporate event</option>
@@ -38,10 +35,10 @@
     <option>Birthday</option>
     <option>Other</option>
   </select>
-
+  
   <label for="textarea">Additional details</label>
   <textarea id="textarea" rows="3"></textarea>
-
+  
   <label for="checkbox">
     <input id="checkbox" type="checkbox" checked="">
     <span>Email me news and special offers</span>
