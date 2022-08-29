@@ -1,7 +1,6 @@
 <!-- Prompt: style the header so that our escape hatch is always on the left and our nav is always on the right (no matter the screen size) with a growing/shrinking middle gap -->
 <!-- Hint: It's grid time. -->
-
-<header class="grid grid-cols-2 items-end">
+<header>
 
   <img src="assets/azalea.png" alt="azalea flower logo" class="max-w-[100px] px-3 py-2">
 
@@ -30,14 +29,14 @@
   </nav>
 </header>
 
-<main class="max-w-3xl mx-auto pt-10 xl:max-w-none xl:ml-0 xl:mr-[15.5rem] xl:pr-16">
- <filler-content></filler-content>
+<!-- prompt: on xl screen sizes, let's take away the margin left -->
+<main class="max-w-3xl mx-auto pt-10">
+  <filler-content></filler-content>
 </main>
 
-<!-- prompt: let's stick the footer to the bottom no matter how little content there is on a page -->
+<!-- prompt: let's stick the footer to the bottom no matter how little content there is on a page. (Comment out main to see the problem.) -->
 <!-- clue: the body is already position relative -->
-<!-- answer:  absolute bottom-0 w-full-->
-<footer class="text-sm leading-6 mt-12 w-full">
+<footer class="text-sm leading-6 mt-12">
   <div class="mb-10 text-slate-700 font-semibold flex items-center dark:text-slate-200"><a
       class="group flex items-center hover:text-slate-900 dark:hover:text-white" href="/"><svg
         viewBox="0 0 3 6"
