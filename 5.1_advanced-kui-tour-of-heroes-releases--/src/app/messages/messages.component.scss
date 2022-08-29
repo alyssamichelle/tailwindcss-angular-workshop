@@ -7,6 +7,7 @@ $messages-bg-color: #EEE;
   align-items: baseline;
   justify-content: space-around;
   background: $messages-bg-color;
+  @apply dark:bg-slate-400;
   overflow: hidden;
   padding: 20px 0;
   margin-bottom: 20px;
@@ -30,9 +31,14 @@ h2 {
     padding-left: 20%;
   }
   // pinstriping the messages
+
   li:nth-child(odd) {
     background-color: $messages-bg-color;
+    @apply dark:bg-slate-400;
   }
   // if there is only one message, no stripes, thanks
-  li:first-child:last-child { background: $muted-bg; }
+  li:first-child:last-child { 
+    background: $muted-bg; 
+    @apply dark:bg-slate-600;
+  }
 }

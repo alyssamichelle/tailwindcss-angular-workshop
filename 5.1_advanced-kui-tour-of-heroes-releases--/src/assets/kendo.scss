@@ -1,0 +1,41 @@
+// alyssa talk with team about making dark mode easier
+:root {
+  --body-text: #424242;
+  --body-bg: #ffffff;
+  --headings-text: #272727;
+  --subtle-text: #666666;
+  --disabled-text: #8f8f8f;
+  --component-text: #424242;
+  --component-bg: #ffffff;
+  --base-text: #424242;
+  --base-bg: #fafafa;
+  --hovered-text: #424242;
+  --hovered-bg: #ececec;
+}
+
+html.dark {
+  --dark-theme: true;
+  --body-text: #ffffff;
+  --body-bg: #000000;
+  --headings-text: #ffffff;
+  --subtle-text: #e0e0e0;
+  --disabled-text: #d0d0d0;
+  --component-text: #ffffff;
+  --component-bg: #101010;
+  --base-text: #ffffff;
+  --base-bg: #151515;
+  --hovered-text: #ffffff;
+  --hovered-bg: #202020;
+}
+
+$body-text: var(--body-text);
+// $body-bg: var(--body-bg);
+$headings-text: var(--headings-text);
+$subtle-text: var(--subtle-text);
+$disabled-text: var(--disabled-text);
+$component-text: var(--component-text);
+$component-bg: var(--component-bg);
+$base-text: var(--base-text);
+$base-bg: var(--base-bg);
+$hovered-text: var(--hovered-text);
+$hovered-bg: var(--hovered-bg);

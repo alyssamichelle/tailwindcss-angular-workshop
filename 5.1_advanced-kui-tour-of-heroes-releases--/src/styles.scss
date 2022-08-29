@@ -3,14 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+// Customizing KUI Base Variables
+@import 'src/assets/kendo.scss';
+
+// Talk to team about better DM support
+// @import 'src/assets/main-dark.scss';
+
 /* Global Styles */
 @import 'src/assets/fonts.scss';
 @import 'src/assets/colors.scss';
 @import 'src/assets/variables.scss';
-
-
-// Customizing KUI Base Variables
-@import 'src/assets/main-dark.scss';
 
 // $base-bg: $hot-pink !default;
 $font-size: $horse !default;
@@ -43,6 +45,23 @@ html {
 body {
   margin: 0;
   @apply dark:bg-slate-800;
+}
+
+.k-card, .k-card-header, .k-card a, .k-card h3, .k-input, .k-button, .k-listview, .k-card, .k-list, .k-list *, .k-pivotgrid, .k-pivotgrid *, .k-toolbar, .k-popover, .k-popover *, .k-flatcolorpicker, .k-flatcolorpicker *,
+div.messages-header-wrapper, .k-expander {
+  @apply dark:bg-slate-500 dark:text-white;
+
+  .k-input, .k-button, .k-listview, .k-card, .k-list, .k-list *, .k-pivotgrid, .k-pivotgrid *, .k-toolbar, .k-popover, .k-popover *, .k-flatcolorpicker, .k-flatcolorpicker *, .k-expander {
+    @apply dark:bg-slate-400 dark:text-white;
+  }
+}
+
+.k-list-item .k-selected {
+  @apply dark:bg-slate-400;
+}
+
+sidebar, code {
+  @apply dark:bg-purple-700 dark:text-white;
 }
 
 [data-text] {

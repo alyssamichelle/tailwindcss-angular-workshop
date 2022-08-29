@@ -1,8 +1,14 @@
-# Tour of Ponies wiht Tailwind CSS + Kendo UI
+# Tour of Ponies with Tailwind CSS + Kendo UI
 I decided a wonderful place to start integrating Tailwind into an existing app would be to try out dark mode! 
 - I started sprinkling in stlyes for very custom things I created.
-- I then used the Kendo UI theme builder to customize all the components and added the generated scss file to our application.
-- Now to specify when to use those styles... if dark then @import dark-mode.scss
+- I then used the Kendo UI theme builder to customize all the components and added the generated scss file to our application.(Turns out there is no way currently to toggle those with KUI, so main-dark be chilling for now.)
+- Turtle also created kendo.scss where he attempted to override the KUI variables using custom properties, to no evail. Tune in later when this feature exists.
+- The end way I got dark mode to work was simply sprinkling in Tailwind's dark utility (check out style.scss) on the components that needed it. This is one thing I love about Kendo UI, it is really versatile, and not overly specific. So no insanely lengthy selectors were needed for this process.
+
+## Take Aways
+- Take it slow. Keep in mind not only Tailwind's conventions, but the conventions of the UI library and your team. Err on the side of making the CSS readable for your team (even if this breaks TW conventions).
+
+- It's good to keep in mind, Tailwind compiles it's styles separately from your component library's lifecycle. So layering at times can be tricky. I found this to be true when attempting to do dark mode dynamically with Tailwind and Kendo UI. The safer bet ended up being to use Tailwind to manually tweak styles using the `dark:` modifier.
 
 # Tour of Heroes — My Little Pony Flavored & Using Kendo UI!
 
