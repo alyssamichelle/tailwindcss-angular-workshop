@@ -1,16 +1,24 @@
-<!-- style the header so that our escape hatch is always on the left and our nav is always on the right (no matter the screen size) with a growing/shrinking middle gap -->
-<header class="grid grid-cols-2 gap-x-5 items-end">
+<!-- Prompt: style the header so that our escape hatch is always on the left and our nav is always on the right (no matter the screen size) with a growing/shrinking middle gap -->
+<!-- Hint: It's grid time. -->
+
+<header class="grid grid-cols-2 items-end">
 
   <img src="assets/azalea.png" alt="azalea flower logo" class="max-w-[100px] px-3 py-2">
 
-  <!-- start with flex justify-center space-x-4 -->
+  <!-- start with flex justify-center -->
   <!-- prompt: our nav items need to align on the bottom of our header, change the classes to make it so! -->
   <!-- answer: items-end on grid above -->
 
-  <!-- prompt: we would like the nav items to align left with the rest of the page content -->
-  <!-- clue: justify the items to the right side -->
-  <!-- answer: justify-end -->
-  <nav class="flex justify-center space-x-4">
+<!-- prompt: Let's wrap those nav items when there is no room for them. -->
+<!-- clue: Feel free to sprinkle in some flex. -->
+<!-- answer: flex-wrap -->
+
+<!-- prompt: we would like the nav items to align left so that when wrapping they look a bit neater -->
+<!-- clue: justify the items to the left side -->
+<!-- answer: justify-start -->
+
+<!-- This doesn't look great but you can now see all nav items on any screen size. We will fix up in next demo. -->
+  <nav class="flex flex-wrap justify-start">
     <a href="/dashboard"
       class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
     <a href="/team"
