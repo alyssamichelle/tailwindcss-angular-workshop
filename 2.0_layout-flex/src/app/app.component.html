@@ -1,0 +1,5 @@
+<h1 class="text-3xl">Layouts in Tailwind</h1>
+<h2 class="text-2xl mb-5 font-thin">Flexbox</h2>
+
+<!-- Use Tailwind's Flexbox options to make this a wrapping row of colorful cards. Make sure each row is centered on itself. -->
+<div class="border-dashed border-2 border-white w-52 h-52" style="height: calc(13rem - {{generateRandomHeight()}}); background-color: {{generateRandomColor()}}" *ngFor="let card of cards"></div>

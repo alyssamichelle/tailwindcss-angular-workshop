@@ -1,7 +1,6 @@
 <h1 class="text-3xl">Layouts in Tailwind</h1>
 <h2 class="text-2xl mb-5 font-thin">Flexbox</h2>
-<div class="container flex gap-6 flex-wrap">
 
-  <div class="border-dashed border-2 border-white w-52 h-52" style="background-color: {{generateRandomColor()}}" *ngFor="let card of cards"></div>
-
+<div class="container flex gap-6 flex-wrap items-center">
+  <div class="border-dashed border-2 border-white w-52 h-52" style="height: calc(13rem + {{generateRandomHeight()}}); background-color: {{generateRandomColor()}};" *ngFor="let card of cards"></div>
 </div>
