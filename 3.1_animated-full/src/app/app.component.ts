@@ -23,7 +23,7 @@ export class AppComponent {
     arrow.style.opacity = scrolledToEnd ? '0' : '1';
   }
 
-  onClick() {
+  scrollDown() {
     window.scrollTo({top: document.body.scrollHeight});
   }
 
